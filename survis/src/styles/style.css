@@ -482,3 +482,22 @@ a:visited {
     background: var(--errorBgColor);
     border: var(--errorBorder);
 }
+
+
+/*for the button to link the two tools*/
+.button-link {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 16px;
+    color: white;
+    background-color: #007BFF;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-left: 20px;
+    float: right;
+    margin: 10px;
+}
+
+.button-link:hover {
+    background-color: #0056b3;
+}
