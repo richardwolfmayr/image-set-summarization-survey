@@ -1,1 +1,0 @@
-const availablePdf = ["crissaff_aries_2018"];

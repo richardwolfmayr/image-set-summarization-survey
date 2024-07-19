@@ -1233,78 +1233,6 @@ body {
     }
 }
 
-
-
-
-
-
-
-
-.survis-button {
-    color: #2C3E50;
-    font-family: "Roboto Condensed", Montserrat, sans-serif;
-    font-weight: 700;
-    font-style: bold;
-    font-size: 1em;
-    float: left;
-    text-align: left;
-    margin-right: 30px;
-    /* width: 110px */
-}
-
-.survis-button:last-child {
-    margin-right: 0px
-}
-
-.survis-button a {
-    display: block;
-    height: 28px;
-    padding: 3px 0px;
-    color: #2C3E50;
-    border-bottom: 2px #b200d1 solid;
-    height: 30px;
-    transition-property: background-color, color;
-    transition-duration: 500ms;
-    transition-timing-function: ease;
-    transition-delay: 25ms
-}
-
-.survis-button a:focus,
-.survis-button a:hover,
-.survis-button a:active,
-.survis-button a.active {
-    height: 30px;
-    border-bottom: 5px #b200d1 solid
-}
-
-@media screen and (max-width: 749px) {
-    .survis-button {
-        margin-right: 40px;
-        width: auto
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .team-button {
     color: #2C3E50;
     font-family: "Roboto Condensed", Montserrat, sans-serif;
@@ -4897,28 +4825,4 @@ input:checked+.slider:before {
 
 .slider.round:before {
     border-radius: 50%
-}
-
-
-
-
-
-
-
-
-.button-link {
-    display: inline-block;
-    padding: 10px 15px;
-    font-size: 16px;
-    color: white;
-    background-color: #007BFF;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-left: 20px;
-    float: right;
-    margin: 10px;
-}
-
-.button-link:hover {
-    background-color: #0056b3;
 }
