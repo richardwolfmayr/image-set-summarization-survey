@@ -6,3 +6,21 @@
 .idea/inspectionProfiles/Project_Default.xml
 .idea/inspectionProfiles/profiles_settings.xml
 .idea/deployment.xml
+
+
+# from survis:
+# Build and Release Folders
+survis/bin/
+survis/bin-debug/
+survis/bin-release/
+
+# Other files and folders
+survis/.settings/
+survis/.idea/
+
+# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
+# should NOT be excluded as they contain compiler settings and other important
+# information for Eclipse / Flash Builder.
+survis/electron/node_modules/
+
+survis/electron/survis-electron-win32-x64/
