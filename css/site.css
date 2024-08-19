@@ -1083,23 +1083,23 @@ input[type="submit"] {
     clear: both
 }
 
-body {
-    width: 750px;
-    margin: 30px auto 0px auto
-}
+/*body {*/
+/*    width: 750px;*/
+/*    margin: 30px auto 0px auto*/
+/*}*/
 
-@media screen and (min-width: 1200px) {
-    body {
-        width: 1600px
-    }
-}
+/*@media screen and (min-width: 1200px) {*/
+/*    body {*/
+/*        width: 1600px*/
+/*    }*/
+/*}*/
 
-@media screen and (max-width: 749px) {
-    body {
-        width: 300px;
-        margin: 10px auto 0px auto
-    }
-}
+/*@media screen and (max-width: 749px) {*/
+/*    body {*/
+/*        width: 300px;*/
+/*        margin: 10px auto 0px auto*/
+/*    }*/
+/*}*/
 
 .home-button {
     color: #2C3E50;
