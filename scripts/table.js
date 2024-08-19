@@ -9,6 +9,15 @@ d3.dsv(';', '../assets/data/header.csv')
         tr.selectAll("th").data(data)
             .join(
                 (enter) => {
+                    // there is a weird bug that sometimes the enter is empty, even though the data is not empty
+                    // when this happens, the tr.selectAll("th") is empty... the tr itself is not empty
+                    // chaining, delay, etc did not work, so we simply reload the page if this happens... this workaround works
+                    if (enter.empty()) {
+                        // reload the page to fix the bug
+                        debugger;
+                        window.location.reload();
+                    }
+
                     const th_enter = enter.append('th');
                     th_enter.html((d, idx) => {
                         // <th scope="col" class="rotate-60"><div><label><span><input value="1" class="cbFilter" type="checkbox"><img src="../assets/images/techniques/color_icons/adaptivesystems_c.png" height="20">Adaptive Systems</span></label></div></th>
