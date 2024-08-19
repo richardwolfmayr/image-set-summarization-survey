@@ -13,11 +13,14 @@ d3.dsv(';', '../assets/data/header.csv')
                     // when this happens, the tr.selectAll("th") is empty... the tr itself is not empty
                     // chaining, delay, etc did not work, so we simply reload the page if this happens... this workaround works
                     if (enter.empty()) {
-                        // reload the page to fix the bug
-                        debugger;
-                        window.location.reload();
+                        // reload the page, clearing the cache to fix the bug
+                        console.log('reloading page to fix bug');
+                        setTimeout(() => {
+                            window.location.reload();
+                        }, 1000);
+                        console.log('reloading page to fix bug');
+                        // the code continues to run, but the table is not displayed... 1 second later the page is reloaded and the table is displayed ==> for the user it works fine
                     }
-
                     const th_enter = enter.append('th');
                     th_enter.html((d, idx) => {
                         // <th scope="col" class="rotate-60"><div><label><span><input value="1" class="cbFilter" type="checkbox"><img src="../assets/images/techniques/color_icons/adaptivesystems_c.png" height="20">Adaptive Systems</span></label></div></th>
