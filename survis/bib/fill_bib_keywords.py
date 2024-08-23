@@ -90,7 +90,7 @@ def fill_keywords(bib_filename, keywords, json_data):
         new_bibfile.writelines(new_bib_content)
 
 def main():
-    csv_input_filename = "table2-combCite.csv"
+    csv_input_filename = "../../assets/data/table2-combCite.csv"
     bib_input_filename = "exploratory.bib"
     json_input_filename = "exploratory.json"
 
