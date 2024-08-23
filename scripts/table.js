@@ -14,6 +14,7 @@ d3.dsv(';', '../assets/data/header.csv')
                     // chaining, delay, etc did not work, so we simply reload the page if this happens... this workaround works
                     if (enter.empty()) {
                         // reload the page, clearing the cache to fix the bug
+                        // this does not work every time. However, the bug is only reproducible at my local machine ==> nvm
                         console.log('reloading page to fix bug');
                         setTimeout(() => {
                             window.location.reload();
