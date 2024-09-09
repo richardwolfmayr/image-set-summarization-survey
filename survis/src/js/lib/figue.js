@@ -7,6 +7,7 @@
  */
 
 
+
 var figue = function () {
 
 
@@ -309,7 +310,10 @@ var figue = function () {
 		while (selected < k) {
 			if (tested == n)
 				return null ;
-			
+
+			// const seedrandom = require('seedrandom');
+			// var rng = seedrandom(42);
+			// var random_index = Math.floor(rng() * n) ;
 			var random_index = Math.floor(Math.random()*(n)) ;
 			if (random_index in tested_indices)
 				continue ;

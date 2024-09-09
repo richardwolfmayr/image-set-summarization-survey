@@ -1,9 +1,9 @@
-# this code uses the .bib file from zotero export as well as a .csv file created for another vis tool: https://github.com/richardwolfmayr/visual-image-set-summarization
+# this code uses the .bib file from zotero export as well as a .csv file created for another vis tool by data-preparation-from-code-matrix-browser.py: https://github.com/richardwolfmayr/visual-image-set-summarization
 # it reads the .bib file and the .csv file and fills the keywords field in the .bib file with the keywords from the .csv file
-# the keywords are structured like this: category1:tag1, category1:tag2, category2:tag1, etc
+# the keywords in the bib file are then structured like this: category1:tag1, category1:tag2, category2:tag1, etc, to be usable by the survis tool
 # it stores the new .bib file in the "references.bib" file which is used by the survis tool
 # problem: The .csv references the papers with and id that is not the same as the id in the .bib file but works with a .json file exported from zotero.
-# so the a matching between the json and the bib export from zotero must be done ==> they are in the same order, which will be used for matching
+# so a matching between the json and the bib export from zotero must be done ==> they are in the same order, which will be used for matching
 
 # idea: create a dictonary in this structure:
 #{id: {category1: [tag1, tag2], category2: [tag1, tag2]}}
@@ -14,7 +14,7 @@
 # so to use this:
 # export bib from zotero
 # export json from zotero
-# create a .csv file with the keywords from the other vis tool
+# create a .csv file with the keywords from the other vis tool with data-preparation-from-code-matrix-browser.py
 # run this script
 
 import json
@@ -55,7 +55,7 @@ def fill_keywords(bib_filename, keywords, json_data):
 
     new_bib_content = []
     json_index = 0
-    ids = list(keywords.keys())
+    # ids = list(keywords.keys())
 
     current_key = None
     entry_keywords_added = False

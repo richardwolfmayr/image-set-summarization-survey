@@ -1,10 +1,9 @@
 # Works with the MAXQDA24 Code Matrix Browser.xlsx file that is created by MAXQDA
 
-# this script should create the table2-combCite file from main_clean.json and Document Profiles.xlsx
+# this script should create the table2-combCite file from main_clean.json and MAXQDA24 Code Matrix Browser.xlsx
 # main_clean.json is the export from zotero
-# Document Profiles.xlsx is the export from MAXQDA Reports-->Document Profiles
-# It creates objects and only later write them to the file, so in between I can do for example sorting
-# unfortunately the Document Profiles.xlsx is not very well-structured, so I have to do some manual work
+# MAXQDA24 Code Matrix Browser.xlsx is the export from MAXQDA Visual Tools
+# The script creates objects and only later write them to a new file, so in between I can do for example sorting
 
 import json
 import re
@@ -33,9 +32,9 @@ df = pd.read_excel('MAXQDA24 Code Matrix Browser.xlsx', sheet_name='Sheet1', hea
 # get all tags and their respective category
 # the subtags are not relevant
 # examples:
-# test_cat_2	... dont care
+# test_cat_2	... don't care
 # test_cat_2 > test_tag_direkt2	... save "test_tag_direkt2" as the tag and "test_cat_2" as the category
-# test_cat_2 > test_tag_direkt2 > subtag1 ... dont care
+# test_cat_2 > test_tag_direkt2 > subtag1 ... don't care
 def get_tag_structure():
     tag_structure = []
     for col in df.columns[1:]:

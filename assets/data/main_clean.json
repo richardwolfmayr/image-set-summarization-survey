@@ -1,5 +1,192 @@
 [
 	{
+		"id": "http://zotero.org/groups/3431/items/VS6X3P5L",
+		"type": "paper-conference",
+		"container-title": "EuroVis 2023 - Short Papers",
+		"DOI": "10.2312/evs.20231051",
+		"ISBN": "978-3-03868-219-6",
+		"publisher": "The Eurographics Association",
+		"title": "Semantic Hierarchical Exploration of Large Image Datasets",
+		"editor": [
+			{
+				"family": "Hoellt",
+				"given": "Thomas"
+			},
+			{
+				"family": "Aigner",
+				"given": "Wolfgang"
+			},
+			{
+				"family": "Wang",
+				"given": "Bei"
+			}
+		],
+		"author": [
+			{
+				"family": "Bäuerle",
+				"given": "Alex"
+			},
+			{
+				"family": "Onzenoodt",
+				"given": "Christian",
+				"dropping-particle": "van"
+			},
+			{
+				"family": "Jönsson",
+				"given": "Daniel"
+			},
+			{
+				"family": "Ropinski",
+				"given": "Timo"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2023"
+				]
+			]
+		}
+	},
+	{
+		"id": "http://zotero.org/groups/3431/items/C9ZFYC3Y",
+		"type": "article-journal",
+		"abstract": "In this paper, we present DendroMap, a novel approach to interactively exploring large-scale image datasets for machine learning (ML). ML practitioners often explore image datasets by generating a grid of images or projecting high-dimensional representations of images into 2-D using dimensionality reduction techniques (e.g., t-SNE). However, neither approach effectively scales to large datasets because images are ineffectively organized and interactions are insufficiently supported. To address these challenges, we develop DendroMap by adapting Treemaps, a well-known visualization technique. DendroMap effectively organizes images by extracting hierarchical cluster structures from high-dimensional representations of images. It enables users to make sense of the overall distributions of datasets and interactively zoom into specific areas of interests at multiple levels of abstraction. Our case studies with widely-used image datasets for deep learning demonstrate that users can discover insights about datasets and trained models by examining the diversity of images, identifying underperforming subgroups, and analyzing classification errors. We conducted a user study that evaluates the effectiveness of DendroMap in grouping and searching tasks by comparing it with a gridified version of t-SNE and found that participants preferred DendroMap. DendroMap is available at https://div-lab.github.io/dendromap/.",
+		"container-title": "IEEE Transactions on Visualization and Computer Graphics",
+		"DOI": "10.1109/TVCG.2022.3209425",
+		"ISSN": "1941-0506",
+		"issue": "1",
+		"journalAbbreviation": "IEEE Trans. Visual. Comput. Graphics",
+		"page": "320-330",
+		"title": "DendroMap: Visual Exploration of Large-Scale Image Datasets for Machine Learning with Treemaps",
+		"volume": "29",
+		"author": [
+			{
+				"family": "Bertucci",
+				"given": "Donald"
+			},
+			{
+				"family": "Hamid",
+				"given": "Md Montaser"
+			},
+			{
+				"family": "Anand",
+				"given": "Yashwanthi"
+			},
+			{
+				"family": "Ruangrotsakun",
+				"given": "Anita"
+			},
+			{
+				"family": "Tabatabai",
+				"given": "Delyar"
+			},
+			{
+				"family": "Perez",
+				"given": "Melissa"
+			},
+			{
+				"family": "Kahng",
+				"given": "Minsuk"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2023",
+					1
+				]
+			]
+		}
+	},
+	{
+		"id": "http://zotero.org/groups/3431/items/GAB27IWZ",
+		"type": "article-journal",
+		"abstract": "Thanks to the capturing devices cost reduction and the advent of social networks, the size of image collections is becoming extremely huge. Many works in the literature have addressed the indexing of large image collections for search purposes. However, there is a lack of support for exploratory data mining. One May want to wander around the images and experience serendipity in the exploration process. Thus, effective paradigms not only for organising, but also visualising these image collections become necessary. In this article, we present a study to jointly index and visualise large image collections. The work focuses on satisfying three constraints. First, large image collections, up to million of images, shall be handled. Second, dynamic collections, such as ever-growing collections, shall be processed in an incremental way, without reprocessing the whole collection at each modification. Finally, an intuitive and interactive exploration system shall be provided to the user to allow him to easily mine image collections. To this end, a data partitioning algorithm has been modified and proximity graphs have been used to fit the visualisation purpose. A custom web platform has been implemented to visualise the hierarchical and graph-based hybrid structure. The results of a user evaluation we have conducted show that the exploration of the collections is intuitive and smooth thanks to the proposed structure. Furthermore, the scalability of the proposed indexing method is proved using large public image collections. © 2018 ACM.",
+		"container-title": "ACM Transactions on Knowledge Discovery from Data",
+		"DOI": "10.1145/3047011",
+		"ISSN": "15564681",
+		"issue": "1",
+		"language": "English",
+		"note": "publisher: Association for Computing Machinery\ntype: Article",
+		"title": "A viewable indexing structure for the interactive exploration of dynamic and large image collections",
+		"URL": "https://www.scopus.com/inward/record.uri?eid=2-s2.0-85042523112&doi=10.1145%2f3047011&partnerID=40&md5=c165eaf1f739055533ac7f23454e07e2",
+		"volume": "12",
+		"author": [
+			{
+				"family": "Rayar",
+				"given": "Frédéric"
+			},
+			{
+				"family": "Barrat",
+				"given": "Sabine"
+			},
+			{
+				"family": "Bouali",
+				"given": "Fatma"
+			},
+			{
+				"family": "Venturini",
+				"given": "Gilles"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2018"
+				]
+			]
+		}
+	},
+	{
+		"id": "http://zotero.org/groups/3431/items/UN3S5BN8",
+		"type": "article-journal",
+		"abstract": "The visualization of an image collection is the process of displaying a collection of images on a screen under some specific layout requirements. This paper focuses on an important problem that is not well addressed by the previous methods: visualizing image collections into arbitrary layout shapes while arranging images according to user-defined semantic or visual correlations (e.g., color or object category). To this end, we first propose a property-based tree construction scheme to organize images of a collection into a tree structure according to user-defined properties. In this way, images can be adaptively placed with the desired semantic or visual correlations in the final visualization layout. Then, we design a two-step visualization optimization scheme to further optimize image layouts. As a result, multiple layout effects including layout shape and image overlap ratio can be effectively controlled to guarantee a satisfactory visualization. Finally, we also propose a tree-Transfer scheme such that visualization layouts can be adaptively changed when users select different 'images of interest.' We demonstrate the effectiveness of our proposed approach through the comparisons with state-of-The-Art visualization techniques. © 2013 IEEE.",
+		"container-title": "IEEE Transactions on Cybernetics",
+		"DOI": "10.1109/TCYB.2015.2448236",
+		"ISSN": "21682267",
+		"issue": "6",
+		"language": "English",
+		"note": "publisher: Institute of Electrical and Electronics Engineers Inc.\ntype: Article",
+		"page": "1286 – 1300",
+		"title": "Tree-Based Visualization and Optimization for Image Collection",
+		"URL": "https://www.scopus.com/inward/record.uri?eid=2-s2.0-84937232110&doi=10.1109%2fTCYB.2015.2448236&partnerID=40&md5=f1a9c12327774099bb9a6fc78923fb51",
+		"volume": "46",
+		"author": [
+			{
+				"family": "Han",
+				"given": "Xintong"
+			},
+			{
+				"family": "Zhang",
+				"given": "Chongyang"
+			},
+			{
+				"family": "Lin",
+				"given": "Weiyao"
+			},
+			{
+				"family": "Xu",
+				"given": "Mingliang"
+			},
+			{
+				"family": "Sheng",
+				"given": "Bin"
+			},
+			{
+				"family": "Mei",
+				"given": "Tao"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2016"
+				]
+			]
+		}
+	},
+	{
 		"id": "http://zotero.org/groups/3431/items/W32DLE9P",
 		"type": "article-journal",
 		"abstract": "Art historians have traditionally used physical light boxes to prepare exhibits or curate collections. On a light box, they can place slides or printed images, move the images around at will, group them as desired, and visual-ly compare them. The transition to digital images has rendered this workflow obsolete. Now, art historians lack well-designed, unified interactive software tools that effectively support the operations they perform with physi-cal light boxes. To address this problem, we designed ARIES (ARt Image Exploration Space), an interactive image manipulation system that enables the exploration and organization of fine digital art. The system allows images to be compared in multiple ways, offering dynamic overlays analogous to a physical light box, and sup-porting advanced image comparisons and feature-matching functions, available through computational image processing. We demonstrate the effectiveness of our system to support art historians tasks through real use cases. © 1981-2012 IEEE.",
@@ -47,6 +234,54 @@
 			"date-parts": [
 				[
 					"2018"
+				]
+			]
+		}
+	},
+	{
+		"id": "http://zotero.org/groups/3431/items/7XM9ZI4S",
+		"type": "article-journal",
+		"abstract": "In our daily lives, images are among the most commonly found data which we need to handle. We present iGraph, a graph-based approach for visual analytics of large image collections and their associated text information. Given such a collection, we compute the similarity between images, the distance between texts, and the connection between image and text to construct iGraph, a compound graph representation which encodes the underlying relationships among these images and texts. To enable effective visual navigation and comprehension of iGraph with tens of thousands of nodes and hundreds of millions of edges, we present a progressive solution that offers collection overview, node comparison, and visual recommendation. Our solution not only allows users to explore the entire collection with representative images and keywords but also supports detailed comparison for understanding and intuitive guidance for navigation. The visual exploration of iGraph is further enhanced with the implementation of bubble sets to highlight group memberships of nodes, suggestion of abnormal keywords or time periods based on text outlier detection, and comparison of four different recommendation solutions. For performance speedup, multiple graphics processing units and central processing units are utilized for processing and visualization in parallel. We experiment with two image collections and leverage a cluster driving a display wall of nearly 50 million pixels. We show the effectiveness of our approach by demonstrating experimental results and conducting a user study. © The Author(s) 2015.",
+		"container-title": "Information Visualization",
+		"DOI": "10.1177/1473871616630778",
+		"ISSN": "14738716",
+		"issue": "1",
+		"language": "English",
+		"note": "publisher: SAGE Publications Ltd\ntype: Article",
+		"page": "21 – 47",
+		"title": "Visualization and recommendation of large image collections toward effective sensemaking",
+		"URL": "https://www.scopus.com/inward/record.uri?eid=2-s2.0-85014294384&doi=10.1177%2f1473871616630778&partnerID=40&md5=d8ae6996487e9a3cf5d08447e174fd5a",
+		"volume": "16",
+		"author": [
+			{
+				"family": "Gu",
+				"given": "Yi"
+			},
+			{
+				"family": "Wang",
+				"given": "Chaoli"
+			},
+			{
+				"family": "Ma",
+				"given": "Jun"
+			},
+			{
+				"family": "Nemiroff",
+				"given": "Robert J."
+			},
+			{
+				"family": "Kao",
+				"given": "David L."
+			},
+			{
+				"family": "Parra",
+				"given": "Denis"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2017"
 				]
 			]
 		}
@@ -120,6 +355,50 @@
 		}
 	},
 	{
+		"id": "http://zotero.org/groups/3431/items/9Q6KU7FV",
+		"type": "article-journal",
+		"abstract": "A narrative collage is an interesting image editing method for summarizing the main theme or storyline behind an image collection. We present a novel method to generate narrative images with plausible semantic scene structures. To achieve this goal, we introduce a layer graph and a scene graph to represent the relative depth order and semantic relationship between image objects, respectively. We first cluster the input image collection to select representative images, and then we extract a group of semantic salient objects from each representative image. Both layer graphs and scene graphs are constructed and combined according to our specific rules for reorganizing the extracted objects in every image. We design an energy model to appropriately locate every object on the final canvas. The experimental results show that our method can produce competitive narrative collage results and that it performs well on a wide range of image collections. © 1995-2012 IEEE.",
+		"container-title": "IEEE Transactions on Visualization and Computer Graphics",
+		"DOI": "10.1109/TVCG.2017.2759265",
+		"ISSN": "10772626",
+		"issue": "9",
+		"language": "English",
+		"note": "publisher: IEEE Computer Society\ntype: Article\nPMID: 28981417",
+		"page": "2559 – 2572",
+		"title": "Narrative Collage of Image Collections by Scene Graph Recombination",
+		"URL": "https://www.scopus.com/inward/record.uri?eid=2-s2.0-85031824417&doi=10.1109%2fTVCG.2017.2759265&partnerID=40&md5=4e8ece1da216d5b3ee772ce6ee76c62d",
+		"volume": "24",
+		"author": [
+			{
+				"family": "Fang",
+				"given": "Fei"
+			},
+			{
+				"family": "Yi",
+				"given": "Miao"
+			},
+			{
+				"family": "Feng",
+				"given": "Hui"
+			},
+			{
+				"family": "Hu",
+				"given": "Shenghong"
+			},
+			{
+				"family": "Xiao",
+				"given": "Chunxia"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2018"
+				]
+			]
+		}
+	},
+	{
 		"id": "http://zotero.org/groups/3431/items/FF2IHK9E",
 		"type": "article-journal",
 		"abstract": "Effective techniques for organizing and visualizing large image collections are in growing demand as visual search gets increasingly popular. Targeting an online astronomy archive with thousands of images, we present our solution for image search and clustering based on the evaluation of image similarity using both visual and textual information. Time-consuming image similarity computation is accelerated using graphics processing unit. To lay out images, we introduce iMap, a treemap-based representation for visualizing and navigating image search and clustering results. iMap not only makes effective use of available display area to arrange images but also maintains stable update when images are inserted or removed during the query. We also develop an embedded visualization that integrates image tags for in-place search refinement. To show the effectiveness of our approach, we demonstrate experimental results, compare our iMap layout with a force-directed layout, and conduct a comparative user study. As a potential tool for astronomy education and outreach, we deploy our iMap to a large tiled display of nearly 50 million pixels. © The Author(s) 2013.",
@@ -167,6 +446,62 @@
 			"date-parts": [
 				[
 					"2015"
+				]
+			]
+		}
+	},
+	{
+		"id": "http://zotero.org/groups/3431/items/QWPNISL7",
+		"type": "article-journal",
+		"abstract": "With the surge of images in the information era, people demand an effective and accurate way to access meaningful visual information. Accordingly, effective and accurate communication of information has become indispensable. In this article, we propose a content-based approach that automatically generates a clear and informative visual summarization based on design principles and cognitive psychology to represent image collections. We first introduce a novel method to make representative and nonredundant summarizations of image collections, thereby ensuring data cleanliness and emphasizing important information. Then, we propose a tree-based algorithm with a two-step optimization strategy to generate the final layout that operates as follows: (1) an initial layout is created by constructing a tree randomly based on the grouping results of the input image set; (2) the layout is refined through a coarse adjustment in a greedy manner, followed by gradient back propagation drawing on the training procedure of neural networks. We demonstrate the usefulness and effectiveness of our method via extensive experimental results and user studies. Our visual summarization algorithm can precisely and efficiently capture the main content of image collections better than alternative methods or commercial tools. © 1995-2012 IEEE.",
+		"container-title": "IEEE Transactions on Visualization and Computer Graphics",
+		"DOI": "10.1109/TVCG.2019.2948611",
+		"ISSN": "10772626",
+		"issue": "4",
+		"language": "English",
+		"note": "publisher: IEEE Computer Society\ntype: Article\nPMID: 31647438",
+		"page": "2298 – 2312",
+		"title": "Content-Based Visual Summarization for Image Collections",
+		"URL": "https://www.scopus.com/inward/record.uri?eid=2-s2.0-85102055610&doi=10.1109%2fTVCG.2019.2948611&partnerID=40&md5=51bc8ccb9b8863ed0be42c09a44b4574",
+		"volume": "27",
+		"author": [
+			{
+				"family": "Pan",
+				"given": "Xingjia"
+			},
+			{
+				"family": "Tang",
+				"given": "Fan"
+			},
+			{
+				"family": "Dong",
+				"given": "Weiming"
+			},
+			{
+				"family": "Ma",
+				"given": "Chongyang"
+			},
+			{
+				"family": "Meng",
+				"given": "Yiping"
+			},
+			{
+				"family": "Huang",
+				"given": "Feiyue"
+			},
+			{
+				"family": "Lee",
+				"given": "Tong-Yee"
+			},
+			{
+				"family": "Xu",
+				"given": "Changsheng"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2021"
 				]
 			]
 		}
@@ -389,6 +724,38 @@
 		}
 	},
 	{
+		"id": "http://zotero.org/groups/3431/items/YBP4748U",
+		"type": "article-journal",
+		"abstract": "With the advent of digital cameras, the number of digital images is on the increase. As a result, image collection summarization systems are proposed to provide users with a condense set of summary images as a representative set to the original high volume image set. In this paper, a semantic knowledge-based approach for image collection summarization is presented. Despite ontology and knowledge-based systems have been applied in other areas of image retrieval and image annotation, most of the current image summarization systems make use of visual or numeric metrics for conducting the summarization. Also, some image summarization systems jointly model visual data of images together with their accompanying textual or social information, while these side data are not available out of the context of web or social images. The main motivation of using ontology approach in this study is its ability to improve the result of computer vision tasks by the additional knowledge which it provides to the system. We defined a set of ontology based features to measure the amount of semantic information contained in each image. A semantic similarity graph was made based on semantic similarities. Summary images were then selected based on graph centrality on the similarity graph. Experimental results showed that the proposed approach worked well and outperformed the current image summarization systems. © 2016, Springer Science+Business Media New York.",
+		"container-title": "Multimedia Tools and Applications",
+		"DOI": "10.1007/s11042-016-3840-1",
+		"ISSN": "13807501",
+		"issue": "9",
+		"language": "English",
+		"note": "publisher: Springer New York LLC\ntype: Article",
+		"page": "11917 – 11939",
+		"title": "A knowledge-based semantic approach for image collection summarization",
+		"URL": "https://www.scopus.com/inward/record.uri?eid=2-s2.0-84988418733&doi=10.1007%2fs11042-016-3840-1&partnerID=40&md5=d3dec204865becdb715e6eeac11c00b2",
+		"volume": "76",
+		"author": [
+			{
+				"family": "Samani",
+				"given": "Zahra Riahi"
+			},
+			{
+				"family": "Moghaddam",
+				"given": "Mohsen Ebrahimi"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2017"
+				]
+			]
+		}
+	},
+	{
 		"id": "http://zotero.org/groups/3431/items/HPDC5VZ6",
 		"type": "article-journal",
 		"abstract": "Summarization is a challenging task that aims to generate a summary by grasping common information of a given set of information. Text summarization is a popular task of determining the topic or generating a textual summary of documents. In contrast, image summarization aims to find a representative summary of a collection of images. However, current methods are still restricted to generating a visual scene graph, tags, and noun phrases, but cannot generate a fitting textual description of an image collection. Thus, we introduce a novel framework for generating a summarized caption of an image collection. Since scene graph generation shows advancement in describing objects and their relationships on a single image, we use it in the proposed method to generate a scene graph for each image in an image collection. Then, we find common objects and their relationships from all scene graphs and represent them as a summarized scene graph. For this, we merge all scene graphs and select part of it by estimating the most common objects and relationships. Finally, the summarized scene graph is input into a captioning model. In addition, we introduce a technique to generalize specific words in the final caption into common concept words incorporating external knowledge. To evaluate the proposed method, we construct a dataset for this task by extending the annotation of the MS-COCO dataset using an image retrieval method. The evaluation of the proposed method on this dataset showed promising performance compared to text summarization-based methods. © ; 2023 The Authors.",
@@ -496,6 +863,50 @@
 		}
 	},
 	{
+		"id": "http://zotero.org/groups/3431/items/9V74JR4E",
+		"type": "article-journal",
+		"abstract": "Interactive visualization of large image collections is important and useful in many applications, such as personal album management and user profiling on images. However, most prior studies focus on using low-level visual features of images, such as texture and color histogram, to create visualizations without considering the more important semantic information embedded in images. This paper proposes a novel visual analytic system to analyze images in a semantic-aware manner. The system mainly comprises two components: a semantic information extractor and a visual layout generator. The semantic information extractor employs an image captioning technique based on convolutional neural network (CNN) to produce descriptive captions for images, which can be transformed into semantic keywords. The layout generator employs a novel co-embedding model to project images and the associated semantic keywords to the same 2D space. Inspired by the galaxy metaphor, we further turn the projected 2D space to a galaxy visualization of images, in which semantic keywords and images are visually encoded as stars and planets. Our system naturally supports multi-scale visualization and navigation, in which users can immediately see a semantic overview of an image collection and drill down for detailed inspection of a certain group of images. Users can iteratively refine the visual layout by integrating their domain knowledge into the co-embedding process. Two task-based evaluations are conducted to demonstrate the effectiveness of our system. © 1995-2012 IEEE.",
+		"container-title": "IEEE Transactions on Visualization and Computer Graphics",
+		"DOI": "10.1109/TVCG.2018.2835485",
+		"ISSN": "10772626",
+		"issue": "7",
+		"language": "English",
+		"note": "publisher: IEEE Computer Society\ntype: Article\nPMID: 29993720",
+		"page": "2362 – 2377",
+		"title": "A Semantic-Based Method for Visualizing Large Image Collections",
+		"URL": "https://www.scopus.com/inward/record.uri?eid=2-s2.0-85046997110&doi=10.1109%2fTVCG.2018.2835485&partnerID=40&md5=f591cf458073eb86ee5dabd71361bdad",
+		"volume": "25",
+		"author": [
+			{
+				"family": "Xie",
+				"given": "Xiao"
+			},
+			{
+				"family": "Cai",
+				"given": "Xiwen"
+			},
+			{
+				"family": "Zhou",
+				"given": "Junpei"
+			},
+			{
+				"family": "Cao",
+				"given": "Nan"
+			},
+			{
+				"family": "Wu",
+				"given": "Yingcai"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2019"
+				]
+			]
+		}
+	},
+	{
 		"id": "http://zotero.org/groups/3431/items/SXEI9VD3",
 		"type": "article-journal",
 		"abstract": "Most content summarization models from the field of natural language processing summarize the textual contents of a collection of documents or paragraphs. In contrast, summarizing the visual contents of a collection of images has not been researched to this extent. In this paper, we present a framework for summarizing the visual contents of an image collection. The key idea is to collect the scene graphs for all images in the image collection, create a combined representation, and then generate a visually summarizing caption using a scene-graph captioning model. Note that this aims to summarize common contents across all images in a single caption rather than describing each image individually. After aggregating all the scene graphs of an image collection into a single scene graph, we normalize it by using an additional concept generalization component. This component selects the common concept in each sub-graph with ConceptNet based on word embedding techniques. Lastly, we refine the captioning results by replacing a specific noun phrase with a common concept from the concept generalization component to improve the captioning results. We construct a dataset for this task based on the MS-COCO dataset using techniques from image classification and image-caption retrieval. An evaluation of the proposed method on this dataset shows promising performance. © 2023, The Author(s), under exclusive license to Springer Nature Switzerland AG.",
@@ -568,6 +979,52 @@
 			"date-parts": [
 				[
 					"2023"
+				]
+			]
+		}
+	},
+	{
+		"id": "http://zotero.org/groups/3431/items/5BDVQVVJ",
+		"type": "paper-conference",
+		"abstract": "We present a new approach to visually browse very large sets of untagged images. In this paper we describe how to generate high quality image descriptors/features using transformed activations of a convolutional neural network. These features are used to model image similarities, which again are used to build a hierarchical image graph. We show how such an image graph can be constructed efficiently. After investigating several browsing and visualization concepts, we found best user experience and ease of usage is achieved by projecting sub-graphs onto a regular 2D-image map. This allows users to explore the image graph similar to navigation services. Copyright © 2017 by SCITEPRESS - Science and Technology Publications, Lda. All rights reserved.",
+		"container-title": "VISIGRAPP 2017 - Proceedings of the 12th International Joint Conference on Computer Vision, Imaging and Computer Graphics Theory and Applications",
+		"DOI": "10.5220/0006274804110416",
+		"ISBN": "978-989-758-226-4",
+		"language": "English",
+		"note": "type: Conference paper",
+		"page": "411 – 416",
+		"publisher": "SciTePress",
+		"title": "Graph navigation for exploring very large image collections",
+		"URL": "https://www.scopus.com/inward/record.uri?eid=2-s2.0-85047844977&doi=10.5220%2f0006274804110416&partnerID=40&md5=a23bdfdf0a08df05215f6cbaa32eb1f8",
+		"volume": "5",
+		"author": [
+			{
+				"family": "Barthel",
+				"given": "Kai Uwe"
+			},
+			{
+				"family": "Hezel",
+				"given": "Nico"
+			}
+		],
+		"editor": [
+			{
+				"family": "F",
+				"given": "Imai"
+			},
+			{
+				"family": "A",
+				"given": "Tremeau"
+			},
+			{
+				"family": "J",
+				"given": "Braz"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2017"
 				]
 			]
 		}
