@@ -17,16 +17,20 @@ import pandas as pd
 # writes into the header.csv file and the table2-combCite.csv file
 
 
+
+
+
 # Load the zotero_data
 with open('main_clean.json', 'r') as f:
     zotero_data = json.load(f)
 
 # load only the 20 exploratory papers TODO: change this to the final papers
-with open('main_clean_20.json', 'r') as f:
-    zotero_data = json.load(f)
+# with open('main_clean_20.json', 'r') as f:
+#     zotero_data = json.load(f)
 
 # Read in the MAXQDA data
 df = pd.read_excel('MAXQDA24 Code Matrix Browser.xlsx', sheet_name='Sheet1', header=0)
+# df = pd.read_excel('MAXQDA24 Code Matrix Browser - Kopie.xlsx', sheet_name='Sheet1', header=0)
 
 
 # get all tags and their respective category
@@ -66,6 +70,14 @@ with open('header.csv', 'w') as f:
         f.write(f"{tag['category']} > {tag['tag']};none;;{tag['category']}\n")
 
 
+# instead of the title, we want to display the id from zotero bib exports, as this is also used in the SURVIS, and it should be similar
+# Load the references.bib
+with open('references.bib', 'r') as f:
+    bib_data = f.read()
+
+# Use a regular expression to find all ids (the part between '{' and ',')
+bibtex_ids = re.findall(r'@(?:article|inproceedings)\{([^,]+),', bib_data)
+
 # the df is a mess ==> create a new structure that is easier to work with
 def create_document_tags_list(df, tag_structure):
     documents_tags = []
@@ -83,7 +95,10 @@ def create_document_tags_list(df, tag_structure):
             else:
                 print(f"ERROR: no match for {document_name}")
 
+        # add the id from the corresponding .bib entry. They are in the same order ==> use the index
+
         document_info = {
+            'bibtex_id': bibtex_ids[index],
             'Document name': document_name,
             'tags': []
         }
@@ -111,6 +126,7 @@ def create_document_tags_list(df, tag_structure):
 
 document_tag_list = create_document_tags_list(df, tag_structure)
 
+
 # for every column of the tagstructure: "category > tag" where there is a number in the MAXQDA-file, the tag information with category and tag is stored in the document_tag_list with has_tag = true,
 # for every other it is stored with has_tag = false
 # now: print it to table2-combCite.csv
@@ -122,7 +138,7 @@ with open('table2-combCite.csv', 'w') as f:
         # it will be overwritten in table.js when reading the data with d3.dsv(';', '../assets/data/table2-combCite.csv')
     f.write("\n")
 
-    for item in zotero_data:
+    for index, item in enumerate(zotero_data):
         # manually fix two titles:
         # Advanced Interface Design for IIIF A Digital Tool to Explore Image Collections at Different Scales; [Design di interfacce avanzato per IIIF. Uno strumento digitale per esplorare collezioni di immagini a diverse scale]
         # remove the spanish title
@@ -138,6 +154,7 @@ with open('table2-combCite.csv', 'w') as f:
         # testcoding: f.write(f"{item['title']}#{item['id']};0;1;1;0;0;1;1;0;0;2;2;3;3;0;0\n")
         # add the actual codings
         zotero_title = item['title']
+        bibtex_id = bibtex_ids[index]
         # find the corresponding MAXQDA data by iterating over the rows of document_tag_list
         for document in document_tag_list:
             # the row['Document name'] is the closest thing to the title in the zotero data
@@ -162,7 +179,7 @@ with open('table2-combCite.csv', 'w') as f:
 
             # case insensitive comparison
             if maxqda_title_short in zotero_title_short:
-                f.write(f"{zotero_title}#{item['id']};")  # only print if found (But ALL should be found in the end... just not during the coding, when not all are done)
+                f.write(f"{bibtex_id}#{item['id']};")  # only print if found (But ALL should be found in the end... just not during the coding, when not all are done)
                 for col in tag_structure:
                     # for every tag in the tag_structure, check if it is set in this document and print 0 or category_number to the file
                     # print(f"Match: {col}")
@@ -171,28 +188,24 @@ with open('table2-combCite.csv', 'w') as f:
                     category = col["category"]  # the category. Depending on the category, the class will be different, e.g. 0, 1, 2, 3
                     if category == "Input Modalities":
                         category_number = 1
-                    # elif category == "Derived Data":
-                    #     category_number = 2
                     elif category == "Image Representation":
                         category_number = 2
-                    # elif category == "Summarization":
-                    elif category == "Summarization_Design_Factors":
+                    elif category == "Summarization":
                         category_number = 3
                     elif category == "Summarizing Entities":
                         category_number = 4
-                    # elif category == "Visual Layout":
-                    elif category == "Spatial Arrangement":
+                    elif category == "Input for Position in Visualization":
                         category_number = 5
-                    # elif category == "Interactions":
-                    elif category == "Interactions_Toward_a_Deeper_Understanding":
+                    elif category == "Set Size - Claimed":
                         category_number = 6
-                    # elif category == "Tasks":
-                    elif category == "Goal":
+                    elif category == "Set Size - Confirmed":
                         category_number = 7
-                    elif category == "Set size":
+                    elif category == "Goal":
                         category_number = 8
-                    elif category == "Evaluation":
+                    elif category == "Interactions":
                         category_number = 9
+                    elif category == "Evaluation":
+                        category_number = 10
                     # elif category == "Application Area":
                     #     category_number = 10
                     # elif category == "test_cat_1":  # ONLY FOR TESTING

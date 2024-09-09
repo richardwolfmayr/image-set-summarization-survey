@@ -27,7 +27,8 @@ d3.dsv(';', '../assets/data/header.csv')
                         // <th scope="col" class="rotate-60"><div><label><span><input value="1" class="cbFilter" type="checkbox"><img src="../assets/images/techniques/color_icons/adaptivesystems_c.png" height="20">Adaptive Systems</span></label></div></th>
                         // dont print the whole col_name, but only the second part. The structure is category > tag and we only want the tag
                         let tagname = d.col_name.split(' > ')[1];
-                        return `<div><span>${tagname}</span></div><p style="width:20px"><label><img src="../assets/images/techniques/color_icons/${d.img_src}" height="20"><input value="${idx + 1}" class="cbFilter" type="checkbox"> <input type="hidden" class="col_name" value="${d.col_name}"></label></p>`
+                        // return `<div><span>${tagname}</span></div><p style="width:20px"><label><img src="../assets/images/techniques/color_icons/${d.img_src}" height="20"><input value="${idx + 1}" class="cbFilter" type="checkbox"> <input type="hidden" class="col_name" value="${d.col_name}"></label></p>`
+                        return `<div><span>${tagname}</span></div><p style="width:20px"><label><input value="${idx + 1}" class="cbFilter" type="checkbox"> <input type="hidden" class="col_name" value="${d.col_name}"></label></p>`
                     });
                     th_enter.attr("class", (d, i) => `rotate-60 ${d.class}`);
                     th_enter.attr("scope", "col");
@@ -99,19 +100,19 @@ function updateTable(data) {
                             case '3':
                                 return `<img height=15px src='../assets/images/ReferenceTable/yes3.png' alt='yes'/>`;
                             case '4':
-                                return `<img height=15px src='../assets/images/ReferenceTable/yes3.png' alt='yes'/>`; // TODO: new images
+                                return `<img height=15px src='../assets/images/ReferenceTable/yes4.png' alt='yes'/>`;
                             case '5':
-                                return `<img height=15px src='../assets/images/ReferenceTable/yes3.png' alt='yes'/>`;
+                                return `<img height=15px src='../assets/images/ReferenceTable/yes5.png' alt='yes'/>`;
                             case '6':
-                                return `<img height=15px src='../assets/images/ReferenceTable/yes3.png' alt='yes'/>`;
+                                return `<img height=15px src='../assets/images/ReferenceTable/yes6.png' alt='yes'/>`;
                             case '7':
-                                return `<img height=15px src='../assets/images/ReferenceTable/yes3.png' alt='yes'/>`;
+                                return `<img height=15px src='../assets/images/ReferenceTable/yes7.png' alt='yes'/>`;
                             case '8':
-                                return `<img height=15px src='../assets/images/ReferenceTable/yes3.png' alt='yes'/>`;
+                                return `<img height=15px src='../assets/images/ReferenceTable/yes8.png' alt='yes'/>`;
                             case '9':
-                                return `<img height=15px src='../assets/images/ReferenceTable/yes3.png' alt='yes'/>`;
+                                return `<img height=15px src='../assets/images/ReferenceTable/yes9.png' alt='yes'/>`;
                             case '10':
-                                return `<img height=15px src='../assets/images/ReferenceTable/yes3.png' alt='yes'/>`;
+                                return `<img height=15px src='../assets/images/ReferenceTable/yes10.png' alt='yes'/>`;
                             default:
                                 return `<a class='literature_col' href='#${d.split('#')[1]}'>${d.split('#')[0]}</a>`;
                         }

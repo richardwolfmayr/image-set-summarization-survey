@@ -16,6 +16,7 @@
 # export json from zotero
 # create a .csv file with the keywords from the other vis tool with data-preparation-from-code-matrix-browser.py
 # run this script
+# run update_data.py
 
 import json
 import csv
