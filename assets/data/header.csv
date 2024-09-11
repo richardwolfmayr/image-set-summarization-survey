@@ -6,18 +6,15 @@ Input Modalities > Text;none;;Input Modalities
 Input Modalities > Image;none;;Input Modalities
 Image Representation > Deep learning-based Image Features;none;;Image Representation
 Image Representation > Traditional Image Features;none;;Image Representation
-Image Representation > Unsicher;none;;Image Representation
 Image Representation > None;none;;Image Representation
 Summarization > Aggregation;none;;Summarization
 Summarization > Subsampling;none;;Summarization
 Summarization > Filtering;none;;Summarization
 Summarization > Spatial Arrangement;none;;Summarization
-Summarization > unsicher;none;;Summarization
 Summarizing Entities > Marks;none;;Summarizing Entities
 Summarizing Entities > Representative Images;none;;Summarizing Entities
 Summarizing Entities > Captions and Tags;none;;Summarizing Entities
 Summarizing Entities > Numerical statistics;none;;Summarizing Entities
-Summarizing Entities > Unsicher;none;;Summarizing Entities
 Input for Position in Visualization > None / fixed Visualization;none;;Input for Position in Visualization
 Input for Position in Visualization > Single Attribute;none;;Input for Position in Visualization
 Input for Position in Visualization > Two Attributes;none;;Input for Position in Visualization
@@ -25,7 +22,6 @@ Input for Position in Visualization > More Attributes;none;;Input for Position i
 Input for Position in Visualization > Distance;none;;Input for Position in Visualization
 Input for Position in Visualization > Geography;none;;Input for Position in Visualization
 Input for Position in Visualization > Topology;none;;Input for Position in Visualization
-Input for Position in Visualization > Unsicher;none;;Input for Position in Visualization
 Set Size - Claimed > not specified;none;;Set Size - Claimed
 Set Size - Claimed > Tens;none;;Set Size - Claimed
 Set Size - Claimed > Hundreds;none;;Set Size - Claimed
@@ -40,20 +36,16 @@ Set Size - Confirmed > Thousands;none;;Set Size - Confirmed
 Set Size - Confirmed > Tens of Thousands;none;;Set Size - Confirmed
 Set Size - Confirmed > Hundreds of Thousands;none;;Set Size - Confirmed
 Set Size - Confirmed > Millions or More;none;;Set Size - Confirmed
-Set Size - Confirmed > Unsicher;none;;Set Size - Confirmed
 Goal > Explore;none;;Goal
 Goal > Confirm;none;;Goal
 Goal > Present;none;;Goal
 Goal > Produce;none;;Goal
-Goal > Not mentioned / unclear;none;;Goal
-Goal > Unsicher;none;;Goal
 Interactions > Select;none;;Interactions
 Interactions > Navigate;none;;Interactions
 Interactions > Reconfigure;none;;Interactions
 Interactions > Encode;none;;Interactions
 Interactions > Show Details / Show Context;none;;Interactions
 Interactions > Filter;none;;Interactions
-Interactions > unsicher;none;;Interactions
 Interactions > None;none;;Interactions
 Evaluation > Algorithmic Performance;none;;Evaluation
 Evaluation > None;none;;Evaluation
