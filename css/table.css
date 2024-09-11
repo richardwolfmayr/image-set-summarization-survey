@@ -217,6 +217,7 @@ table.objecttable.table-header-rotated {
     -o-transform:skew(-45deg,0deg);
     transform:skew(-45deg,0deg);
     /*overflow: hidden;*/
+    pointer-events: none; /* this is relevant for the click event on the checkbox. The div can occlude the input checkbox and then it would not be clickable*/
 }
 
 .table-header-rotated th.rotate span {
@@ -226,8 +227,8 @@ table.objecttable.table-header-rotated {
     -o-transform:skew(45deg,0deg) rotate(315deg);
     transform:skew(45deg,0deg) rotate(315deg);
     position: absolute;
-    bottom: 66px; /* 40 cos(45) = 28 with an additional 2px margin*/
-    left: -45px; /*Because it looked good, but there is probably a mathematical link here as well*/
+    bottom: 70px; /* 40 cos(45) = 28 with an additional 2px margin*/
+    left: -50px; /*Because it looked good, but there is probably a mathematical link here as well*/
     display: inline-block;
     width: 170px;/*85px;*/ /* 80 / cos(45) - 40 cos (45) = 85 where 80 is the height of the cell, 40 the width of the cell and 45 the transform angle*/
     text-align: left;
@@ -247,9 +248,20 @@ table.objecttable.table-header-rotated {
     line-height: 1.0; /*0.8;*/
     /* left: 40px; !*corresponds to one cell width     */
     /*bottom:10px;*/
+
+    /* the tick boxes are left, while the tag boxes are contered, this is why the following 2 lines are needed*/
+    text-align: center; /* Centers the content horizontally */
+    vertical-align: middle; /* Centers the content vertically */
 }
 
-/*FOR PRINTING*/
+.table-header-rotated th.rotate p{
+    /* the tick boxes are left, while the tag boxes are contered, this is why the following 3 lines are needed*/
+    margin: 0;
+    text-align: center; /* Centers the content inside the <p> */
+    display: inline-block;
+}
+
+/*!*FOR PRINTING*!*/
 /*.table-header-rotated th.rotate > div{*/
 /*    position: relative;*/
 /*    top: 12px;*/
@@ -271,15 +283,17 @@ table.objecttable.table-header-rotated {
 /*    -o-transform:skew(-45deg,0deg) rotate(-315deg);*/
 /*    transform:skew(-45deg,0deg) rotate(-315deg);*/
 /*    position: absolute;*/
-/*    bottom: 66px; !* 40 cos(45) = 28 with an additional 2px margin*!*/
-/*    left: -45px; !*Because it looked good, but there is probably a mathematical link here as well*!*/
+/*    bottom: 70px; !* 40 cos(45) = 28 with an additional 2px margin*!*/
+/*    left: -40px; !*Because it looked good, but there is probably a mathematical link here as well*!*/
 /*    display: inline-block;*/
 /*    width: 170px;!*85px;*! !* 80 / cos(45) - 40 cos (45) = 85 where 80 is the height of the cell, 40 the width of the cell and 45 the transform angle*!*/
 /*    text-align: right;*/
 /*    !* white-space: nowrap; *!*/
 /*}*/
+/*!*END FOR PRINTING*!*/
 
 
+/* -------------- */
 .objecttable td{
     text-align: center;
     padding: 0;
