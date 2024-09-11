@@ -41,7 +41,7 @@ def parse_csv(csv_filename):
     return keywords
 
 # Check if the keywords are parsed correctly:
-csv_input_filename = "table2-combCite.csv"
+csv_input_filename = "../../assets/data/table2-combCite.csv"
 keywords = parse_csv(csv_input_filename)
 print(keywords)
 

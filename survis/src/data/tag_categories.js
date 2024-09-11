@@ -12,7 +12,7 @@ const userDefinedTagCategories = {
 	"summarizing entities": {
 		"description": ""
 	},
-	"spatial arrangement": {
+	"input for position in visualization": {
 		"description": ""
 	},
 	"goal": {
@@ -22,6 +22,12 @@ const userDefinedTagCategories = {
 		"description": ""
 	},
 	"evaluation": {
+		"description": ""
+	},
+	"set size - claimed": {
+		"description": ""
+	},
+	"set size - confirmed": {
 		"description": ""
 	},
 }

@@ -1,9 +1,9 @@
 col_name;img_src;class;category
+Input Modalities > Image;none;;Input Modalities
 Input Modalities > Geolocation;none;;Input Modalities
 Input Modalities > Timestamp;none;;Input Modalities
 Input Modalities > Other;none;;Input Modalities
 Input Modalities > Text;none;;Input Modalities
-Input Modalities > Image;none;;Input Modalities
 Image Representation > Deep learning-based Image Features;none;;Image Representation
 Image Representation > Traditional Image Features;none;;Image Representation
 Image Representation > None;none;;Image Representation
@@ -14,28 +14,14 @@ Summarization > Spatial Arrangement;none;;Summarization
 Summarizing Entities > Marks;none;;Summarizing Entities
 Summarizing Entities > Representative Images;none;;Summarizing Entities
 Summarizing Entities > Captions and Tags;none;;Summarizing Entities
-Summarizing Entities > Numerical statistics;none;;Summarizing Entities
-Input for Position in Visualization > None / fixed Visualization;none;;Input for Position in Visualization
+Summarizing Entities > Numerical Statistics;none;;Summarizing Entities
 Input for Position in Visualization > Single Attribute;none;;Input for Position in Visualization
 Input for Position in Visualization > Two Attributes;none;;Input for Position in Visualization
 Input for Position in Visualization > More Attributes;none;;Input for Position in Visualization
 Input for Position in Visualization > Distance;none;;Input for Position in Visualization
 Input for Position in Visualization > Geography;none;;Input for Position in Visualization
 Input for Position in Visualization > Topology;none;;Input for Position in Visualization
-Set Size - Claimed > not specified;none;;Set Size - Claimed
-Set Size - Claimed > Tens;none;;Set Size - Claimed
-Set Size - Claimed > Hundreds;none;;Set Size - Claimed
-Set Size - Claimed > Thousands;none;;Set Size - Claimed
-Set Size - Claimed > Tens of Thousands;none;;Set Size - Claimed
-Set Size - Claimed > Hundreds of Thousands;none;;Set Size - Claimed
-Set Size - Claimed > Millions or More;none;;Set Size - Claimed
-Set Size - Confirmed > not specified;none;;Set Size - Confirmed
-Set Size - Confirmed > Tens;none;;Set Size - Confirmed
-Set Size - Confirmed > Hundreds;none;;Set Size - Confirmed
-Set Size - Confirmed > Thousands;none;;Set Size - Confirmed
-Set Size - Confirmed > Tens of Thousands;none;;Set Size - Confirmed
-Set Size - Confirmed > Hundreds of Thousands;none;;Set Size - Confirmed
-Set Size - Confirmed > Millions or More;none;;Set Size - Confirmed
+Input for Position in Visualization > None / fixed Visualization;none;;Input for Position in Visualization
 Goal > Explore;none;;Goal
 Goal > Confirm;none;;Goal
 Goal > Present;none;;Goal
@@ -48,7 +34,21 @@ Interactions > Show Details / Show Context;none;;Interactions
 Interactions > Filter;none;;Interactions
 Interactions > None;none;;Interactions
 Evaluation > Algorithmic Performance;none;;Evaluation
-Evaluation > None;none;;Evaluation
 Evaluation > User Experience and Performance;none;;Evaluation
-Evaluation > Qualitative Results Inspection (incl Usage Scenario / Use Case);none;;Evaluation
-Evaluation > Case Study (excl. Usage Scenario);none;;Evaluation
+Evaluation > Qualitative Results Inspection;none;;Evaluation
+Evaluation > Case Study;none;;Evaluation
+Evaluation > None;none;;Evaluation
+Set Size - Claimed > Tens;none;;Set Size - Claimed
+Set Size - Claimed > Hundreds;none;;Set Size - Claimed
+Set Size - Claimed > Thousands;none;;Set Size - Claimed
+Set Size - Claimed > Tens of Thousands;none;;Set Size - Claimed
+Set Size - Claimed > Hundreds of Thousands;none;;Set Size - Claimed
+Set Size - Claimed > Millions or More;none;;Set Size - Claimed
+Set Size - Claimed > not specified;none;;Set Size - Claimed
+Set Size - Confirmed > Tens;none;;Set Size - Confirmed
+Set Size - Confirmed > Hundreds;none;;Set Size - Confirmed
+Set Size - Confirmed > Thousands;none;;Set Size - Confirmed
+Set Size - Confirmed > Tens of Thousands;none;;Set Size - Confirmed
+Set Size - Confirmed > Hundreds of Thousands;none;;Set Size - Confirmed
+Set Size - Confirmed > Millions or More;none;;Set Size - Confirmed
+Set Size - Confirmed > not specified;none;;Set Size - Confirmed

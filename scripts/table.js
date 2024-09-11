@@ -30,7 +30,7 @@ d3.dsv(';', '../assets/data/header.csv')
                         // return `<div><span>${tagname}</span></div><p style="width:20px"><label><img src="../assets/images/techniques/color_icons/${d.img_src}" height="20"><input value="${idx + 1}" class="cbFilter" type="checkbox"> <input type="hidden" class="col_name" value="${d.col_name}"></label></p>`
                         return `<div><span>${tagname}</span></div><p style="width:20px"><label><input value="${idx + 1}" class="cbFilter" type="checkbox"> <input type="hidden" class="col_name" value="${d.col_name}"></label></p>`
                     });
-                    th_enter.attr("class", (d, i) => `rotate-60 ${d.class}`);
+                    th_enter.attr("class", (d, i) => `rotate ${d.class}`);
                     th_enter.attr("scope", "col");
                     return th_enter;
                 }
