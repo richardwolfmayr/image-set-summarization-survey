@@ -2,7 +2,7 @@
  * Name as used as title for the main page
  * @type {string}
  */
-var title = 'Literature Collection';
+var title = 'Visual Literature Browser';
 
 /**
  * Relative path to the data directory

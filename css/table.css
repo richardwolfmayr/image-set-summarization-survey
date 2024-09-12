@@ -304,5 +304,5 @@ table.objecttable.table-header-rotated {
 
 /*clicked links should not be purble but stay blue*/
 a:visited {
-    color: #223388;
+    color: blue;
 }
