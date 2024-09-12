@@ -80,7 +80,7 @@ const page = (function () {
             "selector.css",
             "sparkline.css",
             "timeline.css",
-            "entries.css"
+            "entries.css",
         ];
 
         $.each(cssList, function (i, css) {
