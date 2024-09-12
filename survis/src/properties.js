@@ -2,7 +2,7 @@
  * Name as used as title for the main page
  * @type {string}
  */
-var title = 'SurVis Literature Collection';
+var title = 'Literature Collection';
 
 /**
  * Relative path to the data directory
@@ -47,7 +47,7 @@ var tagCloudOptions = [{
  * If BibTeX entries (and tags) should be editable
  * @type {boolean}
  */
-var editable = true;
+var editable = false;
 
 /**
  * Subtitle describing the paper the data is referring to (set to null to deactivate)
@@ -57,6 +57,7 @@ var paper = {
     html: 'Sample literature collection for <b><a href="http://www.visus.uni-stuttgart.de/uploads/tx_vispublications/eurovis14-star.pdf" target="_blank">SurVis</a></b>',
     id: 'Beck2016Visual'
 };
+var paper = null;
 
 /**
  * Extra pages like an about page that will be listed in the footer an can be opened on demand (page name -> path)
@@ -64,6 +65,7 @@ var paper = {
 var extraPages = {
     'about': 'about.html'
 };
+var extraPages = null;
 
 /**
  * Custom style as path to an extra css file (leave empty if not applicable)
