@@ -1,18 +1,18 @@
 col_name;img_src;class;category
 Input Modalities > Image;none;;Input Modalities
-Input Modalities > Geolocation;none;;Input Modalities
 Input Modalities > Timestamp;none;;Input Modalities
-Input Modalities > Other;none;;Input Modalities
+Input Modalities > Geolocation;none;;Input Modalities
 Input Modalities > Text;none;;Input Modalities
-Image Representation > Deep learning-based Image Features;none;;Image Representation
+Input Modalities > Other;none;;Input Modalities
+Image Representation > Deep Learning-Based Image Features;none;;Image Representation
 Image Representation > Traditional Image Features;none;;Image Representation
 Image Representation > None;none;;Image Representation
 Summarization > Aggregation;none;;Summarization
 Summarization > Subsampling;none;;Summarization
 Summarization > Filtering;none;;Summarization
 Summarization > Spatial Arrangement;none;;Summarization
-Summarizing Entities > Marks;none;;Summarizing Entities
 Summarizing Entities > Representative Images;none;;Summarizing Entities
+Summarizing Entities > Marks;none;;Summarizing Entities
 Summarizing Entities > Captions and Tags;none;;Summarizing Entities
 Summarizing Entities > Numerical Statistics;none;;Summarizing Entities
 Input for Position in Visualization > Single Attribute;none;;Input for Position in Visualization
@@ -51,4 +51,4 @@ Set Size - Confirmed > Thousands;none;;Set Size - Confirmed
 Set Size - Confirmed > Tens of Thousands;none;;Set Size - Confirmed
 Set Size - Confirmed > Hundreds of Thousands;none;;Set Size - Confirmed
 Set Size - Confirmed > Millions or More;none;;Set Size - Confirmed
-Set Size - Confirmed > not specified;none;;Set Size - Confirmed
+Set Size - Confirmed > Not Specified;none;;Set Size - Confirmed
