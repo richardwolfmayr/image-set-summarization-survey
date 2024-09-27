@@ -20,13 +20,9 @@ import pandas as pd
 
 
 
-# Load the zotero_data
-with open('main_clean.json', 'r') as f:
+# Load the zotero_data. Should be the same as for survis ==> exploratory.json
+with open('../../survis/bib/exploratory.json', 'r') as f:
     zotero_data = json.load(f)
-
-# load only the 20 exploratory papers TODO: change this to the final papers
-# with open('main_clean_20.json', 'r') as f:
-#     zotero_data = json.load(f)
 
 # Read in the MAXQDA data
 df = pd.read_excel('MAXQDA24 Code Matrix Browser.xlsx', sheet_name='Sheet1', header=0)
@@ -71,8 +67,8 @@ with open('header.csv', 'w') as f:
 
 
 # instead of the title, we want to display the id from zotero bib exports, as this is also used in the SURVIS, and it should be similar
-# Load the references.bib
-with open('references.bib', 'r') as f:
+# Load the exploratory.bib that has been exported from Zotero.
+with open('../../survis/bib/exploratory.bib', 'r') as f:
     bib_data = f.read()
 
 # Use a regular expression to find all ids (the part between '{' and ',')
@@ -196,15 +192,15 @@ with open('table2-combCite.csv', 'w') as f:
                         category_number = 4
                     elif category == "Input for Position in Visualization":
                         category_number = 5
-                    elif category == "Set Size - Claimed":
-                        category_number = 6
-                    elif category == "Set Size - Confirmed":
-                        category_number = 7
                     elif category == "Goal":
-                        category_number = 8
+                        category_number = 6
                     elif category == "Interactions":
-                        category_number = 9
+                        category_number = 7
                     elif category == "Evaluation":
+                        category_number = 8
+                    elif category == "Set Size - Claimed":
+                        category_number = 9
+                    elif category == "Set Size - Confirmed":
                         category_number = 10
                     # elif category == "Application Area":
                     #     category_number = 10
@@ -212,7 +208,7 @@ with open('table2-combCite.csv', 'w') as f:
                     #     category_number = 1
                     # elif category == "test_cat_2":  # ONLY FOR TESTING
                     #     category_number = 2
-                    else:  # TODO: this should not happen
+                    else:  # this should never happen:
                         print(f"ERROR: Category not found: {category}")
                         category_number = 0
 

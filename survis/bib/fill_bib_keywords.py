@@ -67,7 +67,7 @@ def fill_keywords(bib_filename, keywords, json_data):
             new_bib_content.append(line)
             json_index += 1
             entry_keywords_added = False
-        elif 'keywords' in line:
+        elif 'keywords =' in line: # "keywords =" instead of just looking for "keywords" as this word could show up in the abstract
             existing_keywords = line.split('=', 1)[1].strip()[1:-2].strip()
             if current_key in keywords:
                 new_keywords = ', '.join([f"{cat}:{tag}" for cat, tags in keywords[current_key].items() for tag in tags])
@@ -79,7 +79,7 @@ def fill_keywords(bib_filename, keywords, json_data):
             else:
                 new_bib_content.append(line)
             entry_keywords_added = True
-        elif line.strip() == '}' and not entry_keywords_added and current_key in keywords:
+        elif line.strip() == '}' and not entry_keywords_added and current_key in keywords: # the last line, and no keywords have been added, as there is no keywords field in this entry
             new_keywords = ', '.join([f"{cat}:{tag}" for cat, tags in keywords[current_key].items() for tag in tags])
             new_bib_content.append(f'  keywords = {{{new_keywords}}},\n')
             new_bib_content.append(line)
